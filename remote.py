@@ -62,7 +62,7 @@ while True:
     def auth():
         # Retrieve the encrypted message
         conn = httplib.HTTPConnection("bitcoin-otc.com")
-        conn.request("GET", "/otps/23F0DD1989AAC87E")
+        conn.request("GET", "/otps/PUBLICPROFILE")
         r1 = conn.getresponse()
         print r1.status, r1.reason
         # one time OTC secretphrase
